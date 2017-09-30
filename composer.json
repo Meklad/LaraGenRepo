@@ -1,0 +1,20 @@
+{
+    "name": "owl/repo-generator",
+    "description": "This package create repository for a database model.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ahmed Meklad",
+            "email": "ahmed.meklad.news@gmail.com"
+        }
+    ],
+    "autoload": {
+            "psr-4":{
+                "OwlDev\\RepoGenerator\\": "src/"
+            }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "illuminate/support": "~5"
+    }
+}

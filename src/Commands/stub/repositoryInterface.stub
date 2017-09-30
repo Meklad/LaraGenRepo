@@ -1,0 +1,50 @@
+<?php
+
+namespace App\BaseRepository;
+
+/**
+ * Interface Name: BaseRepository
+ * Description: This interface contain the role that must implemented when a new repository create.
+ */
+interface BaseRepository
+{
+    /**
+     * This method fetch all data form the model and returned after doing some logic.
+     *
+     * @return {[Object]} [The fetched data]
+     */
+    public function getAll();
+
+    /**
+     * Return selected record form the database using id.
+     *
+     * @param  {integer} $id  [Record id]
+     * @return {[Object]}     [The returned record]
+     */
+    public function getById($id);
+
+    /**
+     * This method store a new record in the database.
+     *
+     * @param  {Array}  [$array=[]] [This array will represent request object that contain all requests from the view page]
+     * @return {string}             [Return massage tell the user if the record stored successfully or fails]
+     */
+    public function story($array = []);
+
+    /**
+     * This method update a specific record in database using id.
+     *
+     * @param  {integer} $id    [Record Id]
+     * @param  {[Array]} $array [This array will represent request object that contain all requests from the view page]
+     * @return {string}         [Return massage tell the user if the record updated successfully or fails]
+     */
+    public function update($id, $array = []);
+
+    /**
+     * This method delete a specific record form database using id.
+     *
+     * @param  {integer} $id [Record]
+     * @return {string}      [Return massage tell the user if the record deleted successfully or fails]
+     */
+    public function delete($id);
+}
