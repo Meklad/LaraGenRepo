@@ -1,6 +1,6 @@
 <?php
 
-namespace OwlDev\RepoGenerator;
+namespace Owllog\RepoGenerator;
 
 use Illuminate\Console\Command;
 
