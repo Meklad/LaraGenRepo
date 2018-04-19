@@ -1,5 +1,5 @@
 {
-    "name": "Owllog/repo-generator",
+    "name": "owllog/repo-generator",
     "description": "This package create repository for a database model.",
     "license": "MIT",
     "authors": [
